@@ -42,7 +42,6 @@ p {
 }
 
 .hero p {
-  font-family: var(--default-font-family);
   font-size: 36px;
   font-weight: bold;
   margin: 0;
@@ -57,8 +56,7 @@ p {
 }
 
 .about-section {
-  text-align: center;
-  padding: 0;
+  padding: 160px 20px;
 }
 
 .about-section h1 {
@@ -98,15 +96,19 @@ p {
 }
 
 @media (max-width: 900px) {
-  .hero {
-    padding: 80px 20px;
-  }
   h1 {
     font-size: 44px;
     line-height: 56px;
   }
   h2 {
     font-size: 44px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
   .project-description {
     padding: 0;
