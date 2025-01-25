@@ -1,8 +1,8 @@
 :root {
   --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --secondary-color: #f9f7fe;
 }
 
 body {
@@ -15,8 +15,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font-family);
   color: black;
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
@@ -27,6 +27,10 @@ h1 {
 
 h2 {
   font-size: 64px;
+}
+
+h4 {
+  font-size: 48px;
 }
 
 p {
@@ -73,7 +77,6 @@ content-container {
   font-size: 24px;
   line-height: 1.5;
   font-family: var(--default-font-family);
-  margin: 20px 0 0;
 }
 
 .content p {
@@ -103,7 +106,7 @@ content-container {
 }
 
 .project-description {
-  padding: 120px 60px 0;
+  padding: 120px 60px;
 }
 
 .logo {
@@ -117,14 +120,13 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  line-height: 42px;
 }
 
 nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 nav a {
@@ -139,6 +141,47 @@ nav li.active a {
   text-decoration: none;
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -147,6 +190,11 @@ nav li.active a {
   h2 {
     font-size: 44px;
   }
+
+  h4 {
+    font-size: 18px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
