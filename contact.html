@@ -9,6 +9,10 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <meta
+      name="description"
+      content="Contact Patricia. Patricia is a front-end engineer based in Portugal."
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -30,29 +34,111 @@
       src="https://kit.fontawesome.com/0394081ff2.js"
       crossorigin="anonymous"
     ></script>
-    <title>SheCodes Portfolio</title>
+    <title>Contact Patricia - Patricia Pereira</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Patricia Logo"
+          />
+          <img
+            src="images/logo-small.png"
+            class="logo d-block d-md-none"
+            alt="Patricia Logo"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/"> Home</a>
+          </li>
+          <li>
+            <a href="about.html" title="About Patricia">About</a>
+          </li>
+          <li>
+            <a href="work.html" title="Patricia's work">Work</a>
+          </li>
+          <li class="active">
+            <a href="contact.html" title="Contact Patricia">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Let's get in touch!</h1>
         <h3>Email</h3>
         <p>
-          <a href="mailto:sfarch95@gmail.com">sfarch95@gmail.com</a>
+          <a href="mailto:patriciapereira@gmail.com"
+            >patriciapereira@gmail.com</a
+          >
         </p>
         <h3>Twitter</h3>
         <p>
-          <a href="https://www.twitter.com/sfarch95" target="_blank"
-            >@sfarch95</a
+          <a href="https://www.twitter.com/patriciapereira" target="_blank"
+            >@patriciapereira</a
           >
         </p>
         <h3>Instagram</h3>
         <p>
-          <a href="https://www.instagram.com/sfarch95" target="_blank"
-            >@sfarch95.codes</a
+          <a href="https://www.instagram.com/patriciapereira" target="_blank"
+            >@patriciapereira.codes</a
           >
         </p>
       </div>
     </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a
+            href="/contact.html"
+            class="btn btn-branding"
+            title="Contact Patricia"
+            >Contact me</a
+          >
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto:patricia@gmail.com" class="email-link"
+          >patricia@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://www.github.com/patricia"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/patricia"
+          target="_blank"
+          title="Instragram Profile"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/patricia"
+          target="_blank"
+          title="Facebook Profile"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <p class="text-center mt-5">
+        ✌ This project was coded by SheCodes, and it is
+        <a href="https://github.com/mattieua/portfolio-project" target=""
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
